@@ -1,0 +1,265 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+nav ul li a:hover{
+  text-decoration: none;
+  color: #cca219;
+  transition: 0.5s;
+}
+section {
+  padding: 0px 0px 40px 0px;
+  text-align: center;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+  color: #333;
+}
+
+section p {
+  font-size: 18px;
+  color: #555;
+}
+
+.catalogo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grid responsivo com no máximo 6 itens por linha */
+  gap: 20px; /* Espaçamento entre os itens */
+}
+
+.catalogo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grid responsivo com no máximo 6 itens por linha */
+  gap: 20px; /* Espaçamento entre os itens */
+}
+
+.item {
+  text-align: center;
+}
+
+.item img {
+  max-width: 100%;
+}
+
+.item p {
+  margin: 10px 0;
+}
+
+.btn-add-to-cart {
+  background-color: #bd7f23fa;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-add-to-cart:hover {
+  background-color: #caa428ab;
+}
+
+
+.item {
+  text-align: center;
+}
+
+.item img {
+  max-width: 100%;
+}
+
+.item p {
+  margin: 10px 0;
+}
+
+
+.menu-item {
+  margin-bottom: 40px;
+}
+
+.menu-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.menu-item p {
+  font-size: 18px;
+  color: #555;
+}
+
+
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+}
+
+.glide__slide img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align:center;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contato {
+  list-style: none;
+  padding: 0;
+}
+
+.contato li {
+  margin-bottom: 10px;
+}
+
+.contato a{
+  text-decoration: none;
+  color: #bd7f23fa;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #777;
+}
+
+
+/* Estilo para o contêiner do carrossel */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 600px; /* Altura do carrossel */
+}
+
+/* Estilo para cada slide */
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease; /* Transição suave */
+}
+
+/* Estilo para a imagem dentro do slide */
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover; /* Garante que a imagem cubra todo o espaço do slide */
+  
+}
+
+/* Estilo para o slide ativo */
+.slide.active {
+  opacity: 1;
+}
+
+/* Estilo para os pontos de navegação */
+.dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transição de cor ao passar o mouse */
+}
+
+.dot.active {
+  background-color: #bd7f23fa; /* Cor do ponto ativo */
+}
+
+
+/* Estilo para o wrapper de Sobre Nós */
+.sobre-wrapper {
+  display: flex;
+  justify-content: space-between; /* Distribui os elementos uniformemente ao longo do eixo principal */
+  align-items: center; /* Centraliza os itens verticalmente */
+}
+
+/* Estilo para a imagem de Sobre Nós */
+.sobre-imagem {
+  flex: 0 0 50%; /* Define a largura da imagem */
+}
+
+/* Estilo para a imagem dentro de Sobre Nós */
+.sobre-imagem img {
+  max-width: 100%; /* Largura máxima da imagem */
+  height: auto; /* Altura automática para manter a proporção */
+}
+
+/* Estilo para o texto de Sobre Nós */
+.sobre-texto {
+  flex: 0 0 50%; /* Define a largura do texto */
+  padding-right: 10px;
+}

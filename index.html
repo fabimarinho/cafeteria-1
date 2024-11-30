@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafeteria</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- jQuery -->
+  <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+          <h1>Cafeteria</h1>
+          <nav>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#catalogo">Catálogo</a></li>
+              <li><a href="#localizacao">Localização</a></li>
+              <li><a href="carrinho.html"><i class="fas fa-shopping-cart"></i></a></li> <!-- Ícone do carrinho -->
+            </ul>
+          </nav>
+        </div>
+      </header>
+  <section id="home">
+    <!-- Carrossel de imagens -->
+    <div class="carousel">
+      <div class="slide"><img src="assets/cafe(2).jpeg" alt="Café"></div>
+      <div class="slide"><img src="assets/café(3).jpg" alt="Torta"></div>
+      <div class="slide"><img src="assets/salgado.png" alt="Salgado"></div>
+      <!-- Adicione mais imagens conforme necessário -->
+    </div>
+</section>
+<section id="sobre">
+    <div class="container">
+      <div class="sobre-wrapper">
+        <div class="sobre-texto">
+          <h2>Sobre Nós</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sapien at velit efficitur efficitur. Nullam sollicitudin felis nec lectus varius, et egestas arcu dignissim.</p>
+        </div>
+        <div class="sobre-imagem">
+          <img src="assets/cafeteria.jpg" alt="Cafeteria">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="catalogo">
+    <div class="container">
+      <h2>Cardápio</h2>
+      <div class="catalogo-grid">
+        <div class="item">
+          <img src="assets/cafe.png" alt="Café">
+          <p>Café - $2.00</p>
+          <button class="btn-add-to-cart" data-item="Café" data-price="2.00" data-image="cafe.png">Adicionar</button>
+        </div>
+        <div class="item">
+          <img src="assets/cafe.png" alt="Torta">
+          <p>Torta - $3.50</p>
+          <button class="btn-add-to-cart" data-item="Torta" data-price="3.50" data-image="cafe.png">Adicionar</button>
+        </div>
+        <div class="item">
+          <img src="assets/cafe.png" alt="Salgado">
+          <p>Salgado - $1.50</p>
+          <button class="btn-add-to-cart" data-item="Salgado" data-price="1.50" data-image="salgado.jpg">Adicionar</button>
+        </div>
+        <div class="item">
+            <img src="assets/cafe.png" alt="Salgado">
+            <p>Salgado - $1.50</p>
+            <button class="btn-add-to-cart" data-item="Salgado" data-price="1.50" data-image="salgado.jpg">Adicionar</button>
+          </div>
+          <div class="item">
+            <img src="assets/cafe.png" alt="Salgado">
+            <p>Salgado - $1.50</p>
+            <button class="btn-add-to-cart" data-item="Salgado" data-price="1.50" data-image="salgado.jpg">Adicionar</button>
+          </div>
+          <div class="item">
+            <img src="assets/cafe.png" alt="Salgado">
+            <p>Salgado - $1.50</p>
+            <button class="btn-add-to-cart" data-item="Salgado" data-price="1.50" data-image="salgado.jpg">Adicionar</button>
+          </div>
+          <div class="item">
+            <img src="assets/cafe.png" alt="Salgado">
+            <p>Salgado - $1.50</p>
+            <button class="btn-add-to-cart" data-item="Salgado" data-price="1.50" data-image="salgado.jpg">Adicionar</button>
+          </div>
+          <div class="item">
+            <img src="assets/cafe.png" alt="Salgado">
+            <p>Salgado - $1.50</p>
+            <button class="btn-add-to-cart" data-item="Salgado" data-price="1.50" data-image="salgado.jpg">Adicionar</button>
+          </div>
+          <div class="item">
+            <img src="assets/cafe.png" alt="Salgado">
+            <p>Salgado - $1.50</p>
+            <button class="btn-add-to-cart" data-item="Salgado" data-price="1.50" data-image="salgado.jpg">Adicionar</button>
+          </div>
+          <div class="item">
+            <img src="assets/cafe.png" alt="Salgado">
+            <p>Salgado - $1.50</p>
+            <button class="btn-add-to-cart" data-item="Salgado" data-price="1.50" data-image="salgado.jpg">Adicionar</button>
+          </div>
+        <!-- Adicione mais itens conforme necessário -->
+      </div>
+    </div>
+  </section>
+  <section id="localizacao">
+    <div class="container">
+      <div class="localizacao-imagem">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.587948845389!2d-51.2000600231332!3d-30.019985874935838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951979a4012abc99%3A0xdf1bfaeb8b75cbf2!2sAffogato%20Cat%20Caf%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1712599088414!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="localizacao-texto">
+        <h2>Localização</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sapien at velit efficitur efficitur. Nullam sollicitudin felis nec lectus varius, et egestas arcu dignissim.</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+        <ul class="contato">
+            <li>Telefone: (11) 1234-5678</li>
+            <li>
+                Facebook: <a href="#"><i class="fab fa-facebook-square" style="color: rgb(153, 153, 247);"></i> facebook.com/cafeteria</a>
+            </li>
+            <li>
+                Instagram: <a href="#"><i class="fab fa-instagram" style="color:#8a3ab9"></i> @cafeteria</a>
+            </li>
+            <li>WhatsApp: <a href="#"><i class="fab fa-whatsapp" style="color: green;"></i> (11) 98765-4321</a></li>
+        </ul>
+    </div>
+    <div class="copyright">
+        &copy; 2024 Teste
+    </div>
+</footer>
+
+  <script src="carrossel.js"></script>
+
+  
+</body>
+</html>
